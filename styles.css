@@ -1,0 +1,301 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    background: linear-gradient(to bottom, #007bff, #0056b3);
+    color: #fff;
+    padding: 15px; 
+}
+
+#profile-image {
+    max-width: 150px; 
+    height: auto;
+    border-radius: 50%;
+    margin: 10px ; 
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+#profile-image:hover {
+    transform: scale(1.1);
+}
+
+h1 {
+    margin: 5px 0; /* Reducir el margen superior e inferior */
+    color: #007bff;
+    font-size: 24px; /* Reducir el tamaño de fuente */
+}
+
+#informacion-personal,
+#metas,
+#habilidades,
+#logros {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    line-height: 1.6;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    padding: 3px;
+}
+
+
+
+/* Añade estilos para la sección de Logros */
+#logros {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+#logros h2 {
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+#logros ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#logros li {
+    line-height: 1.6;
+    margin-bottom: 10px; 
+}
+
+
+
+
+
+ /* 
+    El css de la Pagina de Info
+ */
+
+
+ body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header, nav, section, footer {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: #333;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+section h2 {
+    color: #333;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #888;
+}
+
+@media (max-width: 768px) {
+    header, nav, section, footer {
+        margin: 10px;
+    }
+
+    .pan-container {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .pan-item {
+        flex: 0 0 auto;
+        margin-right: 20px;
+        position: relative;
+    }
+
+    .pan-item:last-child {
+        margin-right: 0;
+    }
+    
+    .pan-item img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.pan-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.pan-item {
+    flex: 0 0 calc(33.333% - 20px);
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.pan-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.pan-item img {
+    width: 60%;
+    height: 100%;
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin distorsionarla */
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+#descripcion-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+#descripcion-contenedor {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+#descripcion-titulo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#descripcion-texto {
+    font-size: 14px;
+}
+
+.descripcion {
+    display: none; /* Oculta la descripción inicialmente */
+    position: absolute; /* Establece la posición absoluta */
+    bottom: -50px; /* Ajusta la posición vertical */
+    left: 0; /* Alinea a la izquierda */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Define colores como variables */
+:root {
+  --black: #000;
+  --white: #fff;
+  --dark-gray: #333;
+  --light-gray: #f2f2f2;
+  --green: #04AA6D;
+  --hover-color: #361a1a;
+}
+
+/* Estilos generales para la barra de navegación */
+.topnav {
+  background-color: var(--dark-gray);
+  overflow: hidden;
+}
+
+/* Estilos para los enlaces dentro de la barra de navegación */
+.topnav a {
+  float: left;
+  color: var(--light-gray);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Cambia el color de los enlaces al pasar el mouse */
+.topnav a:hover {
+  background-color: var(--hover-color);
+  color: var(--black);
+}
+
+/* Estilos para el enlace activo/actual */
+.topnav a.active {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+

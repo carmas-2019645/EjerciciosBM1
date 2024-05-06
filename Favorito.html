@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Panadería</title>
+</head>
+<body>
+
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">Sobre Mí</a>
+        <a href="#passion"> Amor por Hacer Pan</a>
+        <a href="#process">Proceso </a>
+        <a href="#gallery">Galería</a>
+        <a href="#time">Tiempo Dedicado</a>
+        <a href="Bibiografia.html">Bibiografía</a>
+      </div>
+
+    <header>
+        <h1>Panadería</h1>
+        <p>Bienvenido/a a mi mundo de deliciosos panes caseros.</p>
+    </header>
+
+    <section id="about">
+        <h2>Sobre Mí</h2>
+        <p>¡Hola! Soy Carlos Samuel Armas Cuellar, un apasionado de la panadería. Me gusta mucho este trabajo y cada año que salgo de vacaciones, trabajo con mi papá. La verdad es que me gusta mucho más que todo el ambiente que hay en la panadería, pero sobre todo, le doy gracias a mi padre por tomarse el tiempo en enseñarme ese oficio.</p>
+    </section>
+
+    <section id="passion">
+        <h2>Mi Amor por Hacer Pan</h2>
+        <p>Desde pequeño/a, he sentido una conexión especial con la panadería. La verdad es que encontré una habilidad para manejar la masa y crear diferentes tipos de pan que es asombrosa. Me admiro por mis habilidades y siempre estoy emocionado de aprender algo nuevo de la panadería, y siempre hacer el pan con amor.</p>
+    </section>
+
+    <section id="process">
+        <h2>Proceso de Hacer Pan</h2>
+        <p>El proceso de hacer pan es fascinante y gratificante. Los alimentos son muy deliciosos, pero también es una experiencia profundamente satisfactoria y enriquecedora para mí. Es un arte realizar el pan, y lo mejor es hacerlo a la par de mi papá.</p>
+    </section>
+
+    <section id="gallery">
+        <h2>Galería de Panes</h2>
+        <div class="pan-container">
+            <div class="pan-item" onclick="mostrarDescripcion('Pan Francés','Descripción: 4 tazas de harina, 1 cucharada de sal, 1 cucharada de levadura, 2 cucharadas de azúcar, 1 ¾ taza de agua.')">  
+                <img src="Fotos/frances.jpg" alt="Pan Francés">
+                <div class="descripcion">
+                    Descripción: 4 tazas de harina, 1 cucharada de sal, 1 cucharada de levadura, 2 cucharadas de azúcar, 1 ¾ taza de agua.
+                </div>
+            </div>
+            <div class="pan-item" onclick="mostrarDescripcion('Pan Dormido', 'Materiales: 500 gramos de Harina,  6 Yemas de huevo, 100 gramos de Mantequilla, 1 cuchara de Polvo para hornear,  3 cucharas de Levadura, 3 tazas de Leche líquida, 1 taza de Azúcar, 1 pizca de Sal')">  
+                <img src="Fotos/Pan dormido.jpg" alt="Pan Dormido">
+            </div>
+            <div class="pan-item" onclick="mostrarDescripcion('Quesadilla de arroz', '1 libra de harina de arroz, 4 onzas de harina, 9 onzas de azúcar, 1/2 libra de mantequilla, 1/4 vaso de crema,   4 onzas de queso artesanal fresco, 1 onza de queso seco, 6 huevos, 2 cucharaditas y 1/2 de polvo de hornear, Ajonjolí, 1/4 taza de leche ')">
+                <img src="Fotos/Quesadilla.jpg" alt="Quesadilla de arroz">
+            </div>
+        </div>
+        <div id="descripcion-overlay" onclick="ocultarDescripcion()"></div>
+        <div id="descripcion-contenedor">
+            <p id="descripcion-titulo"></p>
+            <p id="descripcion-texto"></p>
+        </div>
+    </section>
+
+    <section id="time">
+        <h2>Tiempo Dedicado a la Panadería</h2>
+        <p> Desde que era un niño, siempre estuve fascinado por el arte de hacer pan. 
+            Recuerdo vívidamente los aromas tentadores que emanaban de la panadería de mi vecindario, y cómo me quedaba hipnotizado observando a los panaderos trabajar su magia con la masa. 
+            Pero mi historia con la panadería comenzó cuando tenía 8 años, cuando decidí seguir mi pasión y aprender de un gran oficio. 
+            Hoy dedico todo mi tiempo en las vacaciones la energía a mi panadería. 
+            Cada vez que salgo de vacaciones, me levanto temprano para comenzar el proceso de horneado, y cada noche me acuesto con una sonrisa en el rostro, sabiendo que he compartido un poco de felicidad con aquellos que disfrutan de mi pan.
+            Para mí, la panadería no es solo un trabajo, es mi pasión, pero también mi mayor sueño trabajar en una empresa de programador pero nunca olvidar el oficio que me enseño mi papá.
+
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Panadería Carlos Armas</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

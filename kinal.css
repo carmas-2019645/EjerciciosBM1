@@ -1,0 +1,450 @@
+/* Estilos para el navbar */
+.barra-navegacion {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: #111;
+}
+
+.menu img {
+    height: 50px;
+    margin-right: 10px; 
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+/* Estilos para el contenido principal */
+.conte {
+    position: fixed;
+    bottom: 10px; /* Distancia desde la parte inferior */
+    right: 10px; /* Distancia desde el borde derecho */
+}
+
+.fondo img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.contenedor {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenedor p {
+    margin: 0;
+    font-size: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.contenedor::after {
+    content: "";
+    display: block;
+    clear: both;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.personalizado {
+    color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: bold;
+    text-align: justify;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para la sección de tarjetas */
+.contenedor-cartas {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.carta-educacion {
+    width: calc(50% - 20px);
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carta-educacion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carta-educacion h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.carta-educacion p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.carta-educacion ul {
+    list-style-type: disc;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.carta-educacion ul li {
+    margin-left: 20px;
+}
+
+.carta-educacion .boton-slide-cerrar {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border: 2px solid #00ddff;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.carta-educacion .boton-slide-cerrar:hover {
+    background-color: #7d858d;
+    color: #fff;
+}
+
+.carta-educacion-escuela .boton-slide-cerrar {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px 24px;
+    border: 2px solid #00ddff;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.carta-educacion-escuela .boton-slide-cerrar:hover {
+    background-color: #155077;
+    color: #fff;
+}
+
+.carta-educacion-escuela {
+    border: 50px solid #c31d1d; /* Borde sólido con color gris claro */
+    box-shadow: 0px 0px 10px rgba(97, 52, 52, 0.1); /* Sombra difusa */
+    width: 100%; /* Ancho completo */
+    /* Otros estilos según sea necesario */
+}
+
+/* Estilos para la sección de partners */
+.partners {
+    padding: 50px 0;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.imagen-port {
+    color: #007bff;
+}
+
+.imagen-port img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hover-galeria {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.imagen-port:hover .hover-galeria {
+    opacity: 1;
+}
+
+.hover-galeria {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-galeria img {
+    width: 80px;
+    height: auto;
+}
+
+.hover-galeria img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #1a0182; /* Ajusta el color de fondo según tus preferencias */
+    padding: 5px 20px; /* Ajusta el espaciado interior según sea necesario */
+}
+
+.izquierda,
+.centro,
+.derecha {
+    flex: 1; /* Hace que los elementos ocupen el mismo ancho */
+}
+
+.izquierda {
+    text-align: left;
+}
+
+.centro {
+    text-align: center;
+}
+
+.derecha {
+    text-align: right;
+}
+
+/* Ajusta los estilos de las secciones de Contáctanos y Visítanos según sea necesario */
+.contenido, .contenido .correo-electronico {
+    color: white; /* Color del texto */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+/* Ajusta los estilos de la imagen según sea necesario */
+.derecha img {
+    width: 300px; /* Ancho de la imagen */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+
+footer .centro {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .centro .contenido .correo-electronico {
+    transition: color 0.3s ease;
+}
+
+footer .centro .contenido .correo-electronico:hover {
+    color: #007bff;
+}
+
+.contenido-principal{
+    display: flex;
+}
+
+.caja h2{
+    size: 3.100rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #f9820b;
+}
+
+.contenido-principal .caja {
+    flex-basis: 50%;
+    padding: 10px 5px;
+}
+
+.capacitacion {
+    position: relative; /* Asegura que los elementos absolutamente posicionados se alineen con este contenedor */
+    width: 400%; /* Ajusta el ancho según tus necesidades */
+    height: 200px; /* Ajusta la altura según tus necesidades */
+}
+
+.llamita {
+    position: absolute;
+    width: 50px; /* Ancho deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+    top: 25px; /* Centra verticalmente ajustando el valor de acuerdo a tu contenedor */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centrar completamente horizontalmente */
+}
+
+.carta-educacion-escuela {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 100vh; /* Ajusta la altura según sea necesario */
+}
+
+.contenido-carta {
+    text-align: center; /* Para centrar el texto horizontalmente */
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 1 fila y 4 columnas */
+    gap: 10px; /* Espacio entre las tarjetas */
+}
+
+.tarjeta {
+    display: inline-block;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    display: flex; /* Usa flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.encabezado-tarjeta-1,
+.encabezado-tarjeta-2,
+.encabezado-tarjeta-3,
+.encabezado-tarjeta-4 {
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.encabezado-tarjeta-1 {
+    background-color: #5500ff;
+}
+
+.encabezado-tarjeta-2 {
+    background-color: #00ff00;
+}
+
+.encabezado-tarjeta-3 {
+    background-color: #0000ff;
+}
+
+.encabezado-tarjeta-4 {
+    background-color: #ffff00;
+}
+
+
+.info-donacion, .boton-slide {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #070707;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.info-donacion .boton-slide:hover {
+    background-color: #7d858d;
+    color: #152298;
+}
+
+.partners {
+    text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.gridpane {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    grid-template-rows: repeat(3, 1fr); /* Cuatro filas */
+    gap: 10px; /* Espacio entre los elementos */
+    background-color: transparent;
+}
+
+.item img {
+    max-width: 100%; /* Ajusta el ancho de la imagen al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+    border: none;
+}
+
+.item {
+    display: flex; /* Utiliza flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    border: 1px solid rgb(0, 26, 255); /* Borde para cada elemento */
+    padding: 10px; /* Espacio interno */
+}
+
+.partners .contenedor {
+    background-color: transparent; /* Establecer el fondo transparente */
+}
+
+.boton-slide {
+    background-color: orange; /* Cambia el color de fondo a anaranjado */
+    color: white; /* Cambia el color del texto a blanco */
+    /* Otros estilos según sea necesario */
+}
+
+
+
+
+

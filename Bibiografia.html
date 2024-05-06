@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilo.css">
+    <title>Mi Página Personal</title>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#informacion-personal">Información</a>
+        <a href="#metas">Metas</a>
+        <a href="#habilidades">Habilidades </a>
+        <a href="#logros">Logros</a>
+        <a href="#gallery">Galería</a>
+        <a href="Kinal.html">Kinal</a>
+      </div>
+    <header>
+        <h1>Carlos Samuel Armas Cuellar</h1>
+        <h2 class="Inicio">¡Bienvenido a mi página personal!</h2>
+        <img src="Fotos/foto.jpg" alt="Tu Foto" class="profile-image">
+    </header>
+    
+    <section id="informacion-personal">
+        <h2>Información Personal</h2>
+        <ul>
+            <li><strong>Nombre Completo:</strong> Carlos Samuel Armas Cuellar</li>
+            <li><strong>Luagr de Nacimiento:</strong>  Hospital Roosevelt</li>
+            <li><strong>Fecha de Nacimiento:</strong> 23 de enero del año 2006</li>
+            <li><strong>Grado Académico:</strong> 6to Perito en informática</li>
+            <li><strong>Edad:</strong> 18 años</li>
+            
+            
+        </ul>
+    </section>
+
+    <section id="metas">
+        <h2>Mis Metas</h2>
+        <p>Me propongo hacer un buen estudiante este año 2024, seguir haciendo deporte y gestionar mi tiempo eficientemente.
+            Pasar más tiempo de calidad con amigos y familiares.
+            Visitar un nuevo país o ciudad.
+            Aprender sobre diferentes culturas y tradiciones mientras viajas.
+        </p>
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>Fútbol</li>
+            <li>Analizador</li>
+            <li>Resolución de problemas</li>
+        </ul>
+    </section>
+
+    <section id="logros">
+        <h2>Logros</h2>
+        <ul>
+            <li>En el 2018, gané una beca de parte de la escuela donde estudiaba. Le doy gracias a Dios.</li>
+            <li>En el año 2021, me gradué de Kinal de tercero Basico. Me sentí muy emocionado por haber culminado mis estudios básicos.</li>
+            <li>En el año 2022 estuve en tercera divión con el equipo de los rojos, también fuimos campeones en la EMEFUT zona 7 Castillo Lara </li>
+        </ul>
+    </section>
+    <section id="gallery">
+        <h2>Galería de Fotos  de mi</h2>
+        <div class="pan-container">
+            <div class="pan-item" onclick="mostrarDescripcion('4 años','Aqui tenia 4 años este fue el primer día que empecé a estudiar por primera vez')">
+                <img src="Fotos/foto2.jpg" alt="4 años">
+            </div>
+            <div class="pan-item" onclick="mostrarDescripcion('6 años', 'Esta fue la primera vez que conocí Automariscos y también ese día mi papá habia regresado de los Estados Unidos')">
+                <img src="Fotos/foto4.jpg" alt="6 años">
+            </div>
+            <div class="pan-item" onclick="mostrarDescripcion('10 años', 'Esta foto fue la primera que me tomaron para meterme al primer equipo de futbol me senti muy emocionado')">
+                <img src="Fotos/foto3.jpg" alt="10 años">
+            </div>
+        </div>
+        <div id="descripcion-overlay" onclick="ocultarDescripcion()"></div>
+        <div id="descripcion-contenedor">
+            <p id="descripcion-titulo"></p>
+            <p id="descripcion-texto"></p>
+        </div>
+    </section>
+        </div>
+
+    <footer>
+        <p>Contacto: armassamuel018@gmail.com</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
