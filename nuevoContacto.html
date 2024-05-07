@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Contacto</title>
+    <link rel="stylesheet" href="Css/nuevo.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Contactos</h1>
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="Contactos.html">Contactos</a></li>
+            <li class="navbar-item"><a href="favoritos.html">Favoritos</a></li>
+            <li class="navbar-item"><a href="ToDoList.html"></a>Que haceres</li>
+            <li class="navbar-item"><a href="Login.html">Exit</a></li>
+
+
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h2>Nuevo Contacto</h2>
+
+        <form>
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                <div class="warning" id="email-warning"></div>
+            </div>
+            
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+            
+            <input type="submit" value="Agregar contacto" class="btn-submit">
+        </form>
+    </div>
+</body>
+</html>

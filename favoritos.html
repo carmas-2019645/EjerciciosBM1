@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Favoritos</title>
+    <link rel="stylesheet" href="Css/favoritos.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Favoritos</h1>
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="PerfiUsuario.html">Usuario</a></li>
+            <li class="navbar-item"><a href="Contactos.html">Contactos</a></li>
+            <li class="navbar-item"><a href="ToDoList.html">Que haceres</a></li>
+            <li class="navbar-item"><a href="Login.html">Exit</a></li>
+        </ul>
+    </nav>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr onclick="window.location.href='detalle1.html'">
+                <td><span class="star">&#9733;</span> Carlos Cabrera</td>
+            </tr>
+            <tr onclick="window.location.href='detalle3.html'">
+                <td><span class="star">&#9733;</span> Omar Castillo</td>
+            </tr>
+            <tr onclick="window.location.href='detalle5.html'">
+                <td><span class="star">&#9733;</span> Llanel Escobar</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</body>
+</html>

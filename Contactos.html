@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="Css/contacto.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>Contactos</h1>
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="PerfiUsuario.html">Usuario</a></li>
+            <li class="navbar-item"><a href="ToDoList.html">Que haceres</a></li>
+            <li class="navbar-item dropdown">
+                <a href="#" class="dropbtn">Contacto</a>
+                <a href="Login.html" class="dropbtn">Exit</a>
+                <div class="dropdown-content">
+                    <a href="nuevoContacto.html">Nuevo</a>
+                    <a href="favoritos.html">favorito</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <!-- Tabla de contactos -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr onclick="window.location.href='detalle1.html'">
+                <td>Carlos Cabrera</td>
+            </tr>
+            <tr onclick="window.location.href='detalle2.html'">
+                <td>Carlos Altan</td>
+            </tr>
+            <tr onclick="window.location.href='detalle3.html'">
+                <td>Omar Castillo</td>
+            </tr>
+            <tr onclick="window.location.href='detalle4.html'">
+                <td>Isaac Sosa</td>
+            </tr>
+            <tr onclick="window.location.href='detalle5.html'">
+                <td>Llanel Escobar</td>
+            </tr>
+            
+            <tr>
+                <td colspan="1">
+                    <button onclick="location.href='NuevoContacto.html'">Agregar nuevo contacto</button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
