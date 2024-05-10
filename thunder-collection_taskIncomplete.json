@@ -1,0 +1,115 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "taskIncomplete",
+    "dateExported": "2024-04-30T05:11:21.293Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c94ad05d-969a-47ea-9c56-c741656c6916",
+            "colId": "a4ee8142-9fa8-4cde-9dd7-ee46092c29d7",
+            "containerId": "",
+            "name": "ADD_TASK",
+            "url": "localhost:2656/addTask",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-30T05:09:19.948Z",
+            "modified": "2024-04-30T05:09:19.948Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Hacer tarea"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Tengo tarea de Seminario"
+                    },
+                    {
+                        "name": "startDate",
+                        "value": "2024-05-30"
+                    },
+                    {
+                        "name": "endDate",
+                        "value": "2024-05-30"
+                    },
+                    {
+                        "name": "creator",
+                        "value": "Juan Pablo"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c531ad62-6229-4dc0-b26c-2a70e6618a1b",
+            "colId": "a4ee8142-9fa8-4cde-9dd7-ee46092c29d7",
+            "containerId": "",
+            "name": "UPDATE_TASK",
+            "url": "localhost:2656/updateTask/",
+            "method": "PUT",
+            "sortNum": 20000,
+            "created": "2024-04-30T05:10:07.318Z",
+            "modified": "2024-04-30T05:10:07.318Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Hacer tarea de todas las clases"
+                    },
+                    {
+                        "name": "startDate",
+                        "value": "2024-05-28"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "237b7fef-c284-49f3-806f-90466766d073",
+            "colId": "a4ee8142-9fa8-4cde-9dd7-ee46092c29d7",
+            "containerId": "",
+            "name": "DELETE_TASK",
+            "url": "localhost:2656/deleteTask/",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-04-30T05:10:30.118Z",
+            "modified": "2024-04-30T05:10:30.118Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "ffce4540-c795-4867-ab01-49febaac0f85",
+            "colId": "a4ee8142-9fa8-4cde-9dd7-ee46092c29d7",
+            "containerId": "",
+            "name": "SEARCH_TASK",
+            "url": "localhost:2656/search",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2024-04-30T05:10:51.821Z",
+            "modified": "2024-04-30T05:10:51.821Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "search",
+                        "value": "ta"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ]
+}
